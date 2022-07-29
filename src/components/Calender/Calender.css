@@ -1,0 +1,65 @@
+.calender {
+    width:40%;
+    margin:100px auto;
+    padding: 20px;
+    border-radius:2px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 2px #ccc;
+}
+
+.calender__form {
+    margin:20px 0 ;
+    padding: 0 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.calender__content {
+    padding: 20px;
+}
+
+form {
+    width: 33%;
+}
+
+label {
+    margin-right: 15px;
+    line-height:2.2;
+}
+
+input {
+    float: right;
+    outline:none;
+    width: 100px;
+    border:none ;
+    border-bottom:1px solid rgb(145, 145, 145);
+    padding:4px 7px;
+    font-size: 15px;
+}
+
+button {
+    padding: 6px 12px;
+    font-size: 15px;
+    background-color:rgb(26, 197, 244);
+    border-radius: 3px;
+    border: none;
+    margin:15px 0 12px 0;
+    color:#fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    opacity: .6;
+}
+
+span {
+    font-size: 15px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s ease;
+}
+
+span:hover {
+    color: rgb(26, 197, 244);
+}

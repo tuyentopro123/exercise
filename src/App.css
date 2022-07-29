@@ -1,0 +1,20 @@
+:root {
+  --disabled-color:rgb(197, 197, 197);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  user-select: unset;
+}
+
+body {
+  width: 100%;
+  font-family: "Nunito", sans-serif;
+  /* background-color: #000; */
+}
