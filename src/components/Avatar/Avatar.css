@@ -1,0 +1,54 @@
+.avatar {
+    width: 70%;
+    margin: 40px auto;
+    display: flex;
+}
+
+.avatar h3 {
+    margin-bottom: 10px;
+    color: rgb(168, 3, 227);
+}
+
+.avatar-container {
+    flex: 2 1;
+    padding: 20px;
+    border: 2px dashed rgb(50, 217, 247) ;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.avatar-box {
+    flex:1 1;
+}
+
+.avatar-container div {
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    margin-bottom: 15px;
+}
+
+/* avatar entity */
+.avatar-entity {
+    border-radius: 4px;
+    padding: 20px;
+    border: 2px dashed rgb(50, 217, 247) ;
+    margin-bottom: 10px;
+}
+
+.small {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+/* avatar group */
+.avatar-group {
+    border-radius: 4px;
+    padding: 20px;
+    border: 2px dashed rgb(50, 217, 247) ;
+}
+
+.avatar-group div {
+    margin-bottom: 5px;
+}

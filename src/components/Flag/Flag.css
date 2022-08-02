@@ -1,0 +1,45 @@
+.flag {
+    width: 100%;
+    margin: 100px auto;
+}
+
+.flag-container {
+    display: flex;
+    height: 500px;
+}
+
+.flag-button {
+    margin:auto;
+}
+
+.flag-button button {
+    margin:0 10px;
+    padding:7px 14px;
+    outline:none;
+    border:none;
+    cursor: pointer;
+    font-size: 20px;
+    color:#fff;
+    border-radius: 3px;
+    transition: opacity 0.3s ease;
+}
+
+.flag-button button:hover {
+    opacity: .5;
+}
+
+.flag-button button[name="success"] {
+    background-color:#36b37e;
+}
+
+.flag-button button[name="warning"] {
+    background-color:#ffab00;
+}
+
+.flag-button button[name="error"] {
+    background-color:#ff5630;
+}
+
+.flag-button button[name="info"] {
+    background-color:#6554c0;
+}

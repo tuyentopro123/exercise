@@ -1,14 +1,15 @@
 import React,{useState,useEffect} from 'react'
 import "./Calender.css"
 import GetTimeString from "../utils/GetTimeString"
-import GetWeekdayString from "../utils/GetWeekdayString"
 import Body from "./calenderBody/Body"
+import Helmet from "../utils/Helmet/Helmet"
+import convertSolar2Lunar from "./LunaCalender"
 
 const Calender = () => {
 
     const nowDate = new Date()
-    const day = new Date(nowDate.getFullYear(), nowDate.getMonth(), 1).getDay();
-    const date = GetWeekdayString(day) + ", " + GetTimeString(nowDate.getMonth() + 1) + " " + (nowDate.getDate()) + ", " + (nowDate.getFullYear())
+    const day = nowDate.toLocaleString('en-us', { weekday: 'long' })
+    const date = day + ", " + GetTimeString(nowDate.getMonth() + 1) + " " + (nowDate.getDate()) + ", " + (nowDate.getFullYear())
 
     const [info,setInfo] = useState(null)
 
@@ -26,6 +27,9 @@ const Calender = () => {
             }
             setInfo(newInfo)
         }
+        e.target[0].value = "";
+        e.target[1].value = "";
+        e.target[2].value = "";
     }
 
 
@@ -47,30 +51,32 @@ const Calender = () => {
         setInfo(newInfo)
     }
   return (
-    <div className="calender">
-        <div className="calender__container">
-            <div className="calender__form">
-                <form onSubmit={handleSubmit}>
-                    <label htmlFor="">Ngày:</label>
-                    <input name="day" type="number" min="1" max="31"/><br/>
-                    <label htmlFor="">Tháng:</label>
-                    <input name="month" type="number" min="1" max="12"/><br/>
-                    <label htmlFor="">Năm:</label>
-                    <input name="year" type="number" min="1900"/><br/>
-                    <button type="submit"> Search </button>
-                </form>
+    <Helmet title="Calender">
+        <div className="calender">
+            <div className="calender__container">
+                <div className="calender__form">
+                    <form onSubmit={handleSubmit}>
+                        <label htmlFor="">Ngày:</label>
+                        <input name="day" type="number" min="1" max="31"/><br/>
+                        <label htmlFor="">Tháng:</label>
+                        <input name="month" type="number" min="1" max="12"/><br/>
+                        <label htmlFor="">Năm:</label>
+                        <input name="year" type="number" min="1900"/><br/>
+                        <button type="submit"> Search </button>
+                    </form>
 
-            </div>
+                </div>
 
-            <div className="calender__today" onClick={handleGetToday}>
-                <div>Today: <span>{date}</span></div>
-            </div>
+                <div className="calender__today" onClick={handleGetToday}>
+                    <div>Today: <span>{date}</span></div>
+                </div>
 
-            <div className="calender__content">
-                <Body info={info}/>
+                <div className="calender__content">
+                    <Body info={info}/>
+                </div>
             </div>
         </div>
-    </div>
+    </Helmet>
   )
 }
 

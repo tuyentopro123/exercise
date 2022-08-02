@@ -1,0 +1,29 @@
+.navbar {
+    position: fixed;
+    left: 20px;
+    top:20px;
+}
+
+.navbar-link {
+    background-color: rgba(108, 203, 229, 0.526);
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.navbar-link.active {
+    background-color: rgba(67, 207, 246, 1);
+}
+
+.navbar-link:hover {
+    cursor: pointer;
+    background-color: rgba(67, 207, 246, .8);
+}
+
+a {
+    text-decoration: none;
+}
+
+h4 {
+    color:rgb(54, 54, 54);
+    padding: 10px;
+}

@@ -54,10 +54,36 @@
 
 .days div {
     width: calc(400px / 7);
-    height:30px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px !important;
     line-height: 1.5;
-    margin:5px 0;
+}
+
+.current-days,.pre-days,.next-days {
+    position: relative;
+}
+
+.current-days p{
+    position: absolute;
+    font-size: 10px;
+    bottom: 0;
+    right: 10%;
+}
+
+.pre-days p{
+    position: absolute;
+    font-size: 10px;
+    bottom: 0;
+    right: 10%;
+}
+
+.next-days p{
+    position: absolute;
+    font-size: 10px;
+    bottom: 0;
+    right: 10%;
 }
 
 .current-days.highlight {

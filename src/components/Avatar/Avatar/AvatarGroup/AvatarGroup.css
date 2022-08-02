@@ -1,0 +1,22 @@
+.group {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.group div img{
+    outline: 3px solid #fff;
+    margin-right: -5px!important;
+}
+
+.more {
+    background-color: rgb(156, 156, 156);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    color: rgb(67, 67, 67);    
+}

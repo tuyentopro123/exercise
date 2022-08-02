@@ -3,6 +3,7 @@ import "./Body.css"
 import getTimeString from "../../utils/GetTimeString"
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
+import convertSolar2Lunar from "../LunaCalender"
 
 const Body = ({info}) => {
     const weeks = ["SUN","MON","TUE","WED","THU","FRI","SAT"]
@@ -30,7 +31,11 @@ const Body = ({info}) => {
         let arr = [];
         const num = getDaysInMonth(year,month - 1)
         for(let i = num - getStartDayInMonth() ; i < num; i++) {
-            arr.push(i + 1);
+            arr.push({
+                day: i + 1,
+                month: month,
+                year: year,
+            });
         }
         return arr;
     }
@@ -44,6 +49,8 @@ const Body = ({info}) => {
         for(let i = 0; i < num; i++) {
             arr.push({
                 day: i + 1,
+                month: month,
+                year: year,
                 special: (i + 1 - sat - 1) % 7 === 0 || (i + 1 - sun - 1) % 7 === 0   ? true : false,
                 today: year === currentYear && month === currentMonth && (i+1) === nowDate ? true : false,
                 active:year === info?.year && month === info?.month && (i+1) === info?.day ? true : false
@@ -58,7 +65,11 @@ const Body = ({info}) => {
         const preNum = getStartDayInMonth()
         const currentNum = getDaysInMonth(year,month)
         for(let i = 0; i < 42 - preNum - currentNum; i++) {
-            arr.push(i + 1);
+            arr.push({
+                day: i + 1,
+                month: month,
+                year: year,
+            });
         }
         return arr;
     }
@@ -83,6 +94,11 @@ const Body = ({info}) => {
         }
     }
 
+    const getLunarDay = (dd,mm,yy) => {
+        const arr = convertSolar2Lunar(dd,mm,yy,7);
+        return arr;
+    }
+
     useEffect(() => {
         if(info) {
             setMonth(info.month);
@@ -90,11 +106,9 @@ const Body = ({info}) => {
         }
     },[info?.month,info?.year])
 
-    console.log(info)
     
   return (
       <div className="body">
-{        console.log("gaga")}
             <div className="header">
             <div className="date">
                 <h1>{`${getTimeString(month + 1)} ${year}`}</h1>
@@ -120,7 +134,10 @@ const Body = ({info}) => {
 
             <div className="days">
                 {createPreDays().map((item,index) => (
-                    <div key={index} className="pre-days">{item}</div>
+                    <div key={index} className="pre-days">
+                        <span>{item.day}</span>
+                        <p>{getLunarDay(item.day,item.month + 1,item.year)[0]}/{getLunarDay(item.day,item.month + 1,item.year)[1]}</p>
+                    </div>
                 ))}
                 {createDays().map((item,index) => (
                     <div 
@@ -131,11 +148,15 @@ const Body = ({info}) => {
                                     ${item.active ? "active" : ""}`
                                 }
                     >
-                        {item.day}
+                        <span>{item.day}</span>
+                        <p>{getLunarDay(item.day,item.month + 1,item.year)[0]}/{getLunarDay(item.day,item.month + 1,item.year)[1]}</p>
                     </div>
                 ))}
                 {createNextDays().map((item,index) => (
-                    <div key={index} className="next-days">{item}</div>
+                    <div key={index} className="next-days">
+                        <span>{item.day}</span>
+                        <p>{getLunarDay(item.day,item.month + 1,item.year)[0]}/{getLunarDay(item.day,item.month + 1,item.year)[1]}</p>
+                    </div>
                 ))}
             </div>
         </div>

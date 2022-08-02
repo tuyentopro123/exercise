@@ -1,0 +1,10 @@
+.navigation {
+    width: 90%;
+    height: 500px;
+    float: right;
+}
+
+/* header */
+.header-container {
+    margin-top:10px;
+}

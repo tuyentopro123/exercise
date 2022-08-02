@@ -1,0 +1,65 @@
+.flag-item {
+    position: fixed;
+    top:0;
+    transform: translate(120%,-100px);
+    opacity: 0;
+    width:450px;
+    background-color:#fff;
+    box-shadow:0px 8px 12px rgba(9, 30, 66, 0.15), 0px 0px 1px rgba(9, 30, 66, 0.31);
+    border-radius: 2px;
+    /* z-index: 999; */
+    user-select: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.flag-item.active {
+    /* z-index: 1000; */
+    transform: translate(120%,15px);
+    opacity: 1;
+}
+
+.flag-box { 
+    display: flex;
+    padding:20px 15px;
+}
+
+.flag-box div {
+    margin:0 5px;
+}
+
+/* flag-content */
+
+.flag-content h3 {
+    margin-bottom: 10px;
+    color: rgb(90, 89, 89);
+}
+
+.flag-content p {
+    margin-bottom: 15px;
+    color: rgb(90, 89, 89);
+}
+
+.feedback {
+    color: rgb(80, 80, 80);
+    font-size: 18px;
+}
+
+.feedback span {
+    color:rgb(83, 115, 246);
+    font-size: 15px;
+    padding: 8px;
+}
+
+.feedback span:hover {
+    background-color:rgb(233, 233, 233);
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+/* flag close */
+
+
+.flag-close svg:hover {
+    cursor: pointer;
+    background-color:rgba(233, 233, 233,.7)
+}

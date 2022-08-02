@@ -1,0 +1,136 @@
+.grantt-chart {
+    width: 90%;
+    display: flex;
+    float: right;
+}
+
+.grantt-container {
+    flex:1 1;
+    margin-top: 40px;
+    border-right: 1px solid #ccc;
+}
+
+.grantt-draggble {
+    flex:2 1;
+    border-right: 1px solid #ccc;
+    max-width: 880px;
+    overflow-x: auto;
+    margin-top: 40px;
+}
+
+/* Title */
+
+.grantt-header {
+    display: flex;
+    height:50px;
+}
+
+.grantt-title {
+    flex:1 1;
+}
+
+.grantt-title div{
+    display: inline-block;
+    line-height:50px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left:1px solid #ccc;
+    width:25%;
+}
+
+.grantt-time {
+    flex:2 1;
+    display: flex;
+    height:52px;
+}
+
+/* time */
+.grantt-time__box{
+    position: relative;
+    border-right: 1px solid #ccc;
+    width:851px;
+}
+
+.grantt-month {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-left: none;
+}
+
+.grantt-date li{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height:30px;
+    font-size: 12px;
+    width:calc(850px / 30);
+    border-bottom: 1px solid #ccc;
+    border-left:1px solid #ccc;
+}
+
+.grantt-date li:nth-child(1){
+    border-left:none;
+}
+
+/* content */
+
+.grantt-cell {
+    /* display: flex; */
+}
+
+.grantt-row {
+    flex:1 1;
+}
+
+.grantt-row div{
+    display: inline-block;
+    line-height:50px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    border-left:1px solid #ccc;
+    width:25%;
+}
+
+.grantt-content {
+    flex:2 1;
+}
+
+.grantt-content__box {
+    position: relative;
+    width:850px;
+    height:51px;
+}
+
+.grantt-box {
+    /* max-height: 700px;
+    overflow-y: auto; */
+}
+
+.grantt-progress {
+    position: relative;
+    height:20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.grantt-progress div{
+    height:20px;
+    display:inline-block;
+}
+
+.progress-child-left {
+    background-color:red;
+    width: 50%;
+}
+
+.progress-child-right {
+    width: 50%;
+    background-color: yellow;
+}
+
+/* ::-webkit-scrollbar-x {
+    position: fixed;
+} */

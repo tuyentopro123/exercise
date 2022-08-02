@@ -1,10 +1,10 @@
 .calender {
     width:40%;
-    margin:100px auto;
+    margin:30px auto;
     padding: 20px;
     border-radius:2px;
     border: 1px solid #ccc;
-    box-shadow: 0 0 2px #ccc;
+    box-shadow:0 4px 9px rgb(0 0 0 / 40%);
 }
 
 .calender__form {
@@ -18,16 +18,16 @@
     padding: 20px;
 }
 
-form {
+.calender__form form {
     width: 33%;
 }
 
-label {
+.calender__form label {
     margin-right: 15px;
     line-height:2.2;
 }
 
-input {
+.calender__form input {
     float: right;
     outline:none;
     width: 100px;
@@ -37,7 +37,7 @@ input {
     font-size: 15px;
 }
 
-button {
+.calender__form button {
     padding: 6px 12px;
     font-size: 15px;
     background-color:rgb(26, 197, 244);
@@ -49,17 +49,17 @@ button {
     transition: all 0.3s ease;
 }
 
-button:hover {
+.calender__form button:hover {
     opacity: .6;
 }
 
-span {
+.calender__today span {
     font-size: 15px;
     cursor: pointer;
     user-select: none;
     transition: all 0.2s ease;
 }
 
-span:hover {
+.calender__today span:hover {
     color: rgb(26, 197, 244);
 }
