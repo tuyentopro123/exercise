@@ -1,0 +1,40 @@
+.loading-bar {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.loading-spinner {
+    width:100%;
+	height:100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.loading-item {
+    width: calc(100px / 12);
+	height: 80%;
+}
+
+.h1 {
+	animation: spinner1 1s -.3s ease-in-out infinite;
+	background:#bbbb88;
+}
+
+.h2 {
+	animation: spinner1 1s -.1s ease-in-out infinite;
+	background: #eeaa88;
+}
+
+.h3 {
+	animation: spinner1 1s -.2s ease-in-out infinite;
+	background:#eedd99;
+}
+
+@keyframes spinner1 {
+	50% {
+		transform: scaleY(0.25);
+	}
+}

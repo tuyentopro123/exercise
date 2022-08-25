@@ -1,0 +1,49 @@
+.carousel {
+    width: 90%;
+    float: right;
+}
+
+#carousel-controls {
+    position: relative;
+    margin-top: 15px;
+    margin: 15px auto;
+    width: 1000px;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner img {
+    display: inline-block;
+    height:500px;
+    width:1000px;
+}
+
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    transform: translateX(100%);
+    width: 100%;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform .4s ease-in-out;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-item.active {
+    transform: translateX(0);
+}
+
+.carousel-item-prev {
+    transform: translateX(-100%);
+}

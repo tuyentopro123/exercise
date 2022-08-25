@@ -1,0 +1,66 @@
+.battery {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+}
+
+.battery-container {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    overflow: hidden;
+}
+
+.battery-icon {
+    position: absolute;
+    top: 50%;
+    right: -8%;
+    height: 25%;
+    border-radius: 3px;
+    transform:translateY(-50%);
+    width: 10px;
+    background-color: #fff;
+}
+
+.battery-process {
+    width: 100%;
+    height: 100%;
+    animation: batteryUpdate 12s linear infinite;
+}
+
+@keyframes batteryUpdate {
+    0% {
+        width: 0;
+        background-color: #f05050;
+    }
+    25% {
+        width: 50%;
+        background-color: #f05050;
+    }
+    25.1% {
+        width: 50%;
+        background-color: #1ab667;
+    }
+    50% {
+        width: 100%;
+        background-color: #1ab667;
+    }
+    75% {
+        width: 50%;
+        background-color: #1ab667;
+    }
+    75.1% {
+        width: 50%;
+        background-color: #f05050;
+    }
+
+    100% {
+        width: 0;
+        background-color: #f05050;
+    }
+}

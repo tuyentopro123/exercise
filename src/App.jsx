@@ -6,6 +6,9 @@ import Navbar from "./components/Navbar/Navbar"
 import Flag from "./components/Flag/Flag"
 import Navigation from "./components/Navigation/Navigation"
 import GranttChart from "./components/GranttChart/GranttChart"
+import Video from "./components/Video/Video"
+import Carousel from "./components/Carousel/Carousel"
+import Animation from "./components/Animation/Animation"
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
           <Route path='/flag' element={<Flag />}/>
           <Route path='/navigation' element={<Navigation />}/>
           <Route path='/grantt-chart' element={<GranttChart />}/>
+          <Route path='/video' element={<Video />}/>
+          <Route path='/carousel' element={<Carousel />}/>
+          <Route path='/animation' element={<Animation />}/>
         </Routes>
       </BrowserRouter>  
     </div>

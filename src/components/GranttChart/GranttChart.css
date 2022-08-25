@@ -1,21 +1,33 @@
 .grantt-chart {
     width: 90%;
+    margin-top: 40px;
     display: flex;
+    max-height: 500px;
     float: right;
+    overflow-y: scroll;
+    border-bottom: 1px solid #ccc;
 }
 
 .grantt-container {
     flex:1 1;
-    margin-top: 40px;
     border-right: 1px solid #ccc;
+    height: 100%;
+    position: sticky;
+    left: 0;
+    right: 0;
+    z-index: 100000;
+    background-color: #fff;
 }
 
 .grantt-draggble {
     flex:2 1;
-    border-right: 1px solid #ccc;
     max-width: 880px;
-    overflow-x: auto;
-    margin-top: 40px;
+    height:100%;
+    /* overflow: scroll; */
+}
+.grantt-menu {
+    position: sticky;
+    top: 0;
 }
 
 /* Title */
@@ -23,6 +35,19 @@
 .grantt-header {
     display: flex;
     height:50px;
+    position: sticky;
+    background-color: #fff;
+    z-index: 10000;
+    top: 0;
+    width: 20%;
+}
+
+.grantt-header.title {
+    width: 462px;
+}
+
+.grantt-header.time {
+    width: 850px;
 }
 
 .grantt-title {
@@ -49,6 +74,7 @@
 .grantt-time__box{
     position: relative;
     border-right: 1px solid #ccc;
+    background-color: #fff;
     width:851px;
 }
 
@@ -63,23 +89,16 @@
 .grantt-date li{
     display: inline-flex;
     justify-content: center;
-    align-items: center;
-    line-height:30px;
+    align-items: flex-start;
+    user-select: none;
     font-size: 12px;
+    line-height: 29px;
     width:calc(850px / 30);
     border-bottom: 1px solid #ccc;
     border-left:1px solid #ccc;
 }
 
-.grantt-date li:nth-child(1){
-    border-left:none;
-}
-
 /* content */
-
-.grantt-cell {
-    /* display: flex; */
-}
 
 .grantt-row {
     flex:1 1;
@@ -103,11 +122,11 @@
     width:850px;
     height:51px;
 }
+/* 
+.first {
+    margin-top:52px;
+} */
 
-.grantt-box {
-    /* max-height: 700px;
-    overflow-y: auto; */
-}
 
 .grantt-progress {
     position: relative;
@@ -123,14 +142,15 @@
 
 .progress-child-left {
     background-color:red;
+    width: 25%;
+}
+
+.progress-child-center {
+    background-color:green;
     width: 50%;
 }
 
 .progress-child-right {
-    width: 50%;
+    width: 25%;
     background-color: yellow;
 }
-
-/* ::-webkit-scrollbar-x {
-    position: fixed;
-} */

@@ -33,7 +33,7 @@ const Body = ({info}) => {
         for(let i = num - getStartDayInMonth() ; i < num; i++) {
             arr.push({
                 day: i + 1,
-                month: month,
+                month: month - 1,
                 year: year,
             });
         }
@@ -67,7 +67,7 @@ const Body = ({info}) => {
         for(let i = 0; i < 42 - preNum - currentNum; i++) {
             arr.push({
                 day: i + 1,
-                month: month,
+                month: month + 1,
                 year: year,
             });
         }

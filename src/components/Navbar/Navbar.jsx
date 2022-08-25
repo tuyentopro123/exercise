@@ -25,6 +25,18 @@ const Navbar = () => {
           h4:"GranttChart",
           path:'/grantt-chart'
         },
+        {
+          h4:"Video",
+          path:'/video'
+        },
+        {
+          h4:"Carousel",
+          path:'/carousel'
+        },
+        {
+          h4:"Animation",
+          path:'/animation'
+        },
       ]
   return (
     <div className="navbar">

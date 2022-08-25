@@ -84,9 +84,16 @@ const Avatar = () => {
                         <AvatarItem src="https://res.cloudinary.com/tealive/image/upload/v1651030638/Avatar/c3fzqvuhxkjdyih2i9do.jpg" size="small"/>
                         <AvatarItem src="https://res.cloudinary.com/tealive/image/upload/v1651030638/Avatar/c3fzqvuhxkjdyih2i9do.jpg" size="small"/>
                         <AvatarItem src="https://res.cloudinary.com/tealive/image/upload/v1651030638/Avatar/c3fzqvuhxkjdyih2i9do.jpg" size="small"/>
+                        <AvatarItem src="https://res.cloudinary.com/tealive/image/upload/v1651030638/Avatar/c3fzqvuhxkjdyih2i9do.jpg" size="small"/>
+                        <AvatarItem src="https://res.cloudinary.com/tealive/image/upload/v1651030638/Avatar/c3fzqvuhxkjdyih2i9do.jpg" size="small"/>
+                        <AvatarItem src="https://res.cloudinary.com/tealive/image/upload/v1651030638/Avatar/c3fzqvuhxkjdyih2i9do.jpg" size="small"/>
+                        <AvatarItem src="https://res.cloudinary.com/tealive/image/upload/v1651030638/Avatar/c3fzqvuhxkjdyih2i9do.jpg" size="small"/>
                     </AvatarGroup>
 
                     <AvatarGroup max="4">
+                        <AvatarItem src="https://res.cloudinary.com/tealive/image/upload/v1651030638/Avatar/c3fzqvuhxkjdyih2i9do.jpg"/>
+                        <AvatarItem src="https://res.cloudinary.com/tealive/image/upload/v1651030638/Avatar/c3fzqvuhxkjdyih2i9do.jpg"/>
+                        <AvatarItem src="https://res.cloudinary.com/tealive/image/upload/v1651030638/Avatar/c3fzqvuhxkjdyih2i9do.jpg"/>
                         <AvatarItem src="https://res.cloudinary.com/tealive/image/upload/v1651030638/Avatar/c3fzqvuhxkjdyih2i9do.jpg"/>
                         <AvatarItem src="https://res.cloudinary.com/tealive/image/upload/v1651030638/Avatar/c3fzqvuhxkjdyih2i9do.jpg"/>
                         <AvatarItem src="https://res.cloudinary.com/tealive/image/upload/v1651030638/Avatar/c3fzqvuhxkjdyih2i9do.jpg"/>
