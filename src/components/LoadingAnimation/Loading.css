@@ -1,0 +1,6 @@
+.loading {
+  height: 90vh;
+  width: 70%;
+  margin: 40px auto;
+  display: flex;
+}

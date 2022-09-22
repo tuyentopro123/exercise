@@ -1,0 +1,131 @@
+.among-us {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  animation: fade 0.2s ease-in-out;
+}
+
+.among-us.active {
+  display: flex;
+}
+
+.among-us:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e35d8d33-b328-4a99-abc6-72115f6ba1c6/de894ev-532ae2c5-fd3d-453c-9213-a43c59bc18f1.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2UzNWQ4ZDMzLWIzMjgtNGE5OS1hYmM2LTcyMTE1ZjZiYTFjNlwvZGU4OTRldi01MzJhZTJjNS1mZDNkLTQ1M2MtOTIxMy1hNDNjNTliYzE4ZjEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.2bgrWL3LmxV-9v0dsa817XZohj-nN5HKXAY-nfTkU-c");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.among-container {
+  margin: auto;
+  z-index: 1;
+}
+
+.among-effects {
+  width: 160px;
+  height: 160px;
+  margin: auto;
+  background-image: url("../../../../../assets/image/tải\ xuống.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.among-text {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.among-text span {
+  font-size: 40px;
+  font-weight: bolder;
+  display: inline-block;
+  color: #fff;
+  margin: 5px;
+  animation: loading04 2s infinite ease-in-out;
+}
+
+.among-text span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.among-text span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.among-text span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.among-text span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.among-text span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.among-text span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+.among-text span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+
+.among-text span:nth-child(8) {
+  animation-delay: 0.7s;
+  height: 5px;
+  width: 5px;
+  margin-bottom: 0;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.among-text span:nth-child(9) {
+  animation-delay: 0.8s;
+  height: 5px;
+  width: 5px;
+  margin-bottom: 0;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.among-text span:nth-child(10) {
+  animation-delay: 0.9s;
+  height: 5px;
+  width: 5px;
+  margin-bottom: 0;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+@keyframes loading04 {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  10%,
+  90% {
+    transform: translateY(8px);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

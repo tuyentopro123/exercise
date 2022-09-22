@@ -9,6 +9,7 @@ const Navigation = () => {
         <div className="navigation">
             <div className="navigation-header">
                 <NavigateTop/>
+                <input type="date" placeholder="YYYY-MM-DD" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" onChange={(e) => console.log(e.target.value)}/>
             </div>
         </div>
     </Helmet>

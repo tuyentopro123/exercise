@@ -35,7 +35,7 @@ const Header = () => {
             <defs>
             <linearGradient id="paint0_linear_2441_3133" x1="7.72764" y1="11.1243" x2="3.09245" y2="19.1527" gradientUnits="userSpaceOnUse">
             <stop stopColor="#0052CC"/>
-            <stop offset="0.9228" stop-color="#2684FF"/>
+            <stop offset="0.9228" stopColor="#2684FF"/>
             </linearGradient>
             </defs>
           </svg>
